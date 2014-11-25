@@ -1,0 +1,18 @@
+'global':
+  'editor':
+    'showInvisibles': true
+    'preferredLineLength': 120
+    'softWrapped': true
+    'showIndentGuide': true
+    'fontSize': 12
+  'core':
+    'disabledPackages': [
+      'metrics'
+    ]
+  'exception-reporting':
+    'userId': '2f6c1fe2-cfdb-87de-4712-11b4b505fed4'
+  'welcome':
+    'showOnStartup': false
+  'atom-beautify':
+    '_analyticsUserId': '1d4703af-c0bf-4e61-8894-f8865aaabf2b'
+  'autoprefixer': {}

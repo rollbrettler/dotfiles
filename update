@@ -1,0 +1,5 @@
+# Update to the latest RubyGems version
+gem update --system
+
+# Update Atom packages
+yes | apm upgrade

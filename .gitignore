@@ -1,0 +1,19 @@
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# gets generated automatically
+id_boot2docker
+id_boot2docker.pub
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Secret files
+.secrets
+.ssh/config

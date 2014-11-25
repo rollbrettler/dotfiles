@@ -1,0 +1,30 @@
+# install rvm
+echo "install rvm"
+\curl -sSL https://get.rvm.io | bash -s stable
+rvm install 2.1.5
+source ~/.rvm/scripts/rvm
+export PATH="$PATH:$HOME/.rvm/bin"
+rvm use 2.1.5
+
+# check and install/update homebrew
+function updateHomebrew() {
+    echo "update Homebrew"
+    brew update && brew upgrade
+}
+
+if brew -v | grep "Homebrew"; then
+    echo "Homebrew is installed"
+    updateHomebrew
+else
+    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+fi
+
+# install basic tool setup
+for pkg in ack git node go boot2docker git-ftp brew-cask "imagemagick --with-webp" "homebrew/php/php55 --with-gmp" homebrew/dupes/grep lynx; do
+    if brew ls --versions $pkg; then
+        echo "$pkg is installed"
+    else
+        echo "install $pkg"
+        brew install $pkg
+    fi
+done
