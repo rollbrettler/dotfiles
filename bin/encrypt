@@ -1,0 +1,4 @@
+#!/bin/bash
+for file in ".ssh/config" ".secrets"; do
+  gpg --recipient tim@timpetter.de --armor --encrypt $file
+done
