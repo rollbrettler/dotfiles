@@ -2,8 +2,13 @@
 	name = Tim Petter
 	email = tim@timpetter.de
 [alias]
-  c = commit
-  p = pull
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
 
 [apply]
 	# Detect whitespace errors when applying a patch
