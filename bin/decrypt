@@ -1,0 +1,5 @@
+#!/bin/bash
+for file in ".ssh/config" ".secrets"; do
+  echo "${file}.asc"
+  gpg --output $file --recipient tim@timpetter.de --armor --decrypt "${file}.asc"
+done
