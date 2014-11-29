@@ -1,4 +1,7 @@
 #!/bin/bash
-for file in ".ssh/config" ".secrets"; do
-  gpg --recipient tim@timpetter.de --armor --encrypt $file
+
+source ~/.dotfiles/bin/lib/secret_files.sh
+
+for secret_file in "${secret_files[@]}"; do
+  gpg --recipient tim@timpetter.de --armor --encrypt $secret_file
 done
