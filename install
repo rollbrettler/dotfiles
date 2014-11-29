@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+OS='uname -s'
+dotfiles=(".aliases" ".exports" ".secrets" "wgetrc")
+
+clone_dotfile_repository() {
+  git clone git@github.com:rollbrettler/dotfiles.git ~/.dotfiles
+}
+
+make_scripts_executable() {
+  for script in "decrypt" "encrypt" "install" "mac"; do
+    chmod +x ~/.dotfiles/bin/"${script}"
+  done
+}
+
+link_dotfiles() {
+  for dotfile in $dotfiles; do
+    ln -s ~/.dotfiles/"${dotfile}" ~/"${dotfile}"
+  done
+}
+
+if [ "$($OS)" == 'Darwin' ]; then
+    echo "Install Mac software"
+
+    # Install xcode tools
+    xcode-select --install
+
+    clone_dotfile_repository
+    make_scripts_executable
+
+    # Execute mac install script
+    ~/.dotfiles/mac
+else
+    echo "Linux #ToDo"
+    # clone_dotfile_repository
+    # make_scripts_executable
+fi
