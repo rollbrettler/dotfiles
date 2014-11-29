@@ -1,8 +1,13 @@
-# Update to the latest RubyGems version
-gem update --system
+#!/usr/bin/env ruby
 
-# Update Atom packages
-yes | apm upgrade
+puts "Update to the latest RubyGems version"
+  system "gem update --system"
 
-# [ToDo]
-# alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
+puts "Update Atom packages"
+  system "yes | apm upgrade"
+
+puts "Update brew"
+  system "brew update && brew upgrade && brew cleanup"
+
+puts "Updae global npm packages"
+  system "npm update npm -g"
