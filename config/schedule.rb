@@ -18,6 +18,9 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
-every 2.hours do
-  command "#{Dir.pwd}/bin/encrypt"
+
+current_directory = Dir.pwd
+
+every :monday, :at => '10am' do
+  command "#{current_directory}/bin/update"
 end

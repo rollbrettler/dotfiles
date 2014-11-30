@@ -28,6 +28,8 @@ if [ "$($OS)" == 'Darwin' ]; then
     clone_dotfile_repository
     make_scripts_executable
 
+    curl -L http://install.ohmyz.sh | sh
+
     # Execute mac install script
     ~/.dotfiles/mac
 else
