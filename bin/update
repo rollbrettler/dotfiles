@@ -1,13 +1,19 @@
 #!/usr/bin/env ruby
 
-puts "Update to the latest RubyGems version"
+require "colorize"
+
+def puts_colorful(string)
+  puts string.colorize(:green).bold
+end
+
+puts_colorful "Update to the latest RubyGems version"
   system "gem update --system"
 
-puts "Update Atom packages"
+puts_colorful "Update Atom packages"
   system "yes | apm upgrade"
 
-puts "Update brew"
+puts_colorful "Update brew"
   system "brew update && brew upgrade && brew cleanup"
 
-puts "Updae global npm packages"
+puts_colorful "Updae global npm packages"
   system "npm update npm -g"
