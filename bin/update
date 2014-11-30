@@ -17,3 +17,6 @@ puts_colorful "Update brew"
 
 puts_colorful "Updae global npm packages"
   system "npm update npm -g"
+
+puts_colorful "Updae oh my zsh"
+  system "upgrade_oh_my_zsh"
