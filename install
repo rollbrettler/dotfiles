@@ -8,7 +8,7 @@ clone_dotfile_repository() {
 }
 
 make_scripts_executable() {
-  for script in "decrypt" "encrypt" "install" "mac"; do
+  for script in "decrypt" "encrypt" "mac"; do
     chmod +x ~/.dotfiles/bin/"${script}"
   done
 }
@@ -29,12 +29,15 @@ if [ "$($OS)" == 'Darwin' ]; then
     # Install xcode tools
     xcode-select --install
 
+    read -p "Please proceed with xcode setup and press the enter key after setup is finished "
+    sudo xcrun cc
+
     clone_dotfile_repository
     make_scripts_executable
     install_general_terminal_tools
 
     # Execute mac install script
-    ~/.dotfiles/mac
+    ~/.dotfiles/bin/mac
 else
     echo "Linux #ToDo"
     # clone_dotfile_repository
