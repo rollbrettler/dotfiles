@@ -28,6 +28,7 @@ if ! command -v brew >/dev/null; then
     ruby <(curl -fsS https://raw.githubusercontent.com/Homebrew/install/master/install)
 else
   fancy_echo "Homebrew already installed. Skipping ..."
+    brew update && brew upgrade
 fi
 
 fancy_echo "Installing Redis, a good key-value database ..."
@@ -39,8 +40,8 @@ fancy_echo "Installing The Silver Searcher (better than ack or grep) to search t
 fancy_echo "Installing vim from Homebrew to get the latest version ..."
   brew_install_or_upgrade 'vim'
 
-fancy_echo "Installing ctags, to index files for vim tab completion of methods, classes, variables ..."
-  brew_install_or_upgrade 'ctags'
+#fancy_echo "Installing ctags, to index files for vim tab completion of methods, classes, variables ..."
+#  brew_install_or_upgrade 'ctags'
 
 fancy_echo "Installing tmux, to save project state and switch between projects ..."
   brew_install_or_upgrade 'tmux'
