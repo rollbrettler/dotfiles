@@ -15,8 +15,8 @@ puts_colorful "Update Atom packages"
 puts_colorful "Update brew"
   system "brew update && brew upgrade && brew cleanup"
 
-puts_colorful "Updae global npm packages"
-  system "npm update npm -g"
+puts_colorful "Update global npm packages"
+  system "sudo npm update npm -g"
 
-puts_colorful "Updae oh my zsh"
+puts_colorful "Update oh my zsh"
   system "upgrade_oh_my_zsh"

@@ -19,6 +19,10 @@ link_dotfiles() {
   done
 }
 
+install_general_terminal_tools() {
+  curl -L http://install.ohmyz.sh | sh
+}
+
 if [ "$($OS)" == 'Darwin' ]; then
     echo "Install Mac software"
 
@@ -27,8 +31,7 @@ if [ "$($OS)" == 'Darwin' ]; then
 
     clone_dotfile_repository
     make_scripts_executable
-
-    curl -L http://install.ohmyz.sh | sh
+    install_general_terminal_tools
 
     # Execute mac install script
     ~/.dotfiles/mac
@@ -36,4 +39,9 @@ else
     echo "Linux #ToDo"
     # clone_dotfile_repository
     # make_scripts_executable
+    # install_general_terminal_tools
+    # curl https://raw.githubusercontent.com/creationix/nvm/v0.20.0/install.sh | bash
+
+    # Execute mac install script
+    # ~/.dotfiles/mac
 fi
