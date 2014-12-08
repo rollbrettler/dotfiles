@@ -10,10 +10,6 @@
     'disabledPackages': [
       'metrics'
     ]
-    'themes': [
-      'atom-dark-ui'
-      'glitterbomb'
-    ]
   'exception-reporting':
     'userId': '2f6c1fe2-cfdb-87de-4712-11b4b505fed4'
   'welcome':
