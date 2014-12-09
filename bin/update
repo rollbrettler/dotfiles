@@ -1,10 +1,6 @@
 #!/usr/bin/env ruby
 
-require "colorize"
-
-def puts_colorful(string)
-  puts string.colorize(:green).bold
-end
+require_relative "../lib/terminal.rb"
 
 puts_colorful "Update to the latest RubyGems version"
   system "gem update --system"

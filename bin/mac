@@ -3,7 +3,7 @@
 # This is a modified Version of the thoughtbot laptop script!
 # https://github.com/thoughtbot/laptop
 
-source ~/.dotfiles/bin/lib/homebrew.sh
+source ~/.dotfiles/lib/homebrew.sh
 source ~/.dotfiles/.exports
 
 fancy_echo() {
