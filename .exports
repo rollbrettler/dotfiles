@@ -39,3 +39,6 @@ export NVM_DIR="~/.nvm"
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# Add pass autocomplete
+# source /usr/local/etc/bash_completion.d/password-store
