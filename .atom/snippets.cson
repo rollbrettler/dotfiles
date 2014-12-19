@@ -13,3 +13,18 @@
 #     'prefix': 'log'
 #     'body': 'console.log $1'
 #
+'.source.js':
+  'jquery ready':
+    'prefix': 'ready'
+    'body': """
+      $("${1:selector}").ready(function(){
+        $2
+      });
+    """
+  'self executing':
+    'prefix': 'load'
+    'body': """
+      $(function() {
+        $1
+      });
+      """
