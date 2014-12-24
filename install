@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 OS='uname -s'
-dotfiles=(".aliases" ".exports" ".secrets" "wgetrc")
 
 clone_dotfile_repository() {
   git clone git@github.com:rollbrettler/dotfiles.git ~/.dotfiles
@@ -14,7 +13,12 @@ make_scripts_executable() {
 }
 
 link_dotfiles() {
-  for dotfile in $dotfiles; do
+  for dotfile in ".aliases" ".exports" ".secrets" ".wgetrc" ".ssh" ".js"; do
+    if [[ -L ~/"${dotfile}" && -d ~/"${dotfile}" ]]; then
+      unlink ~/"${dotfile}"
+    else
+      mv ~/"${dotfile}" ~/.dotfiles/bak/"${dotfile}"
+    fi
     ln -s ~/.dotfiles/"${dotfile}" ~/"${dotfile}"
   done
 }
@@ -34,6 +38,7 @@ if [ "$($OS)" == 'Darwin' ]; then
 
     clone_dotfile_repository
     make_scripts_executable
+    link_dotfiles
     install_general_terminal_tools
 
     # Execute mac install script
