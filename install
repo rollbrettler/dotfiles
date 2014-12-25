@@ -7,7 +7,7 @@ clone_dotfile_repository() {
 }
 
 make_scripts_executable() {
-  for script in "decrypt" "encrypt" "mac"; do
+  for script in "decrypt" "encrypt" "mac" "linux"; do
     chmod +x ~/.dotfiles/bin/"${script}"
   done
 }
@@ -25,6 +25,10 @@ link_dotfiles() {
 
 install_general_terminal_tools() {
   curl -L http://install.ohmyz.sh | sh
+}
+
+install_rvm() {
+  curl https://raw.githubusercontent.com/creationix/nvm/v0.20.0/install.sh | bash
 }
 
 if [ "$($OS)" == 'Darwin' ]; then
@@ -45,11 +49,15 @@ if [ "$($OS)" == 'Darwin' ]; then
     ~/.dotfiles/bin/mac
 else
     echo "Linux #ToDo"
-    # clone_dotfile_repository
-    # make_scripts_executable
-    # install_general_terminal_tools
-    # curl https://raw.githubusercontent.com/creationix/nvm/v0.20.0/install.sh | bash
+
+    sudo apt-get update --assume-yes --quiet
+    sudo apt-get install --assume-yes --quiet zsh
+
+    clone_dotfile_repository
+    make_scripts_executable
+    install_general_terminal_tools
+    install_rvm
 
     # Execute mac install script
-    # ~/.dotfiles/mac
+    ~/.dotfiles/linux
 fi
