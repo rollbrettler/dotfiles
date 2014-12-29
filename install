@@ -10,6 +10,7 @@ make_scripts_executable() {
   for script in "decrypt" "encrypt" "mac" "linux"; do
     chmod +x ~/.dotfiles/bin/"${script}"
   done
+  chmod +x ~/.dotfiles/install
 }
 
 link_dotfiles() {
