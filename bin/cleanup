@@ -4,3 +4,6 @@ require_relative "../lib/terminal.rb"
 
 puts_colorful "Cleanup homebrew and homebrew cask"
   system "brew cleanup && brew cask cleanup"
+
+puts_colorful "Remove 'DS_Store' files"
+  system "find ~ -type f -name '*.DS_Store' -ls -delete"

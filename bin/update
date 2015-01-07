@@ -15,4 +15,4 @@ puts_colorful "Update global npm packages"
   system "sudo npm update npm -g"
 
 puts_colorful "Update oh my zsh"
-  system "upgrade_oh_my_zsh"
+  system "env ZSH=$ZSH /bin/sh $ZSH/tools/upgrade.sh"
