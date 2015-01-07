@@ -1,10 +1,9 @@
-'global':
+'*':
   'editor':
-    'showInvisibles': true
-    'preferredLineLength': 120
-    'softWrapped': true
-    'showIndentGuide': true
     'fontSize': 12
+    'showInvisibles': true
+    'showIndentGuide': true
+    'preferredLineLength': 120
   'core':
     'disabledPackages': [
       'metrics'
