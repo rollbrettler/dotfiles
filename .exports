@@ -42,3 +42,9 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # Add pass autocomplete
 # source /usr/local/etc/bash_completion.d/password-store
+
+# Disable gpg password entering as OSX modal for ssh
+if test "$SSH_CONNECTION" != ""
+then
+  export PINENTRY_USER_DATA="USE_CURSES=1"
+fi
