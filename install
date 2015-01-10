@@ -37,7 +37,7 @@ install_general_terminal_tools() {
   curl -L http://install.ohmyz.sh | sh
 }
 
-install_rvm() {
+install_nvm() {
   curl https://raw.githubusercontent.com/creationix/nvm/v0.20.0/install.sh | bash
 }
 
@@ -69,7 +69,7 @@ else
     link_dotfiles
     link_submodule_files
     install_general_terminal_tools
-    install_rvm
+    install_nvm
 
     # Execute mac install script
     ~/.dotfiles/linux

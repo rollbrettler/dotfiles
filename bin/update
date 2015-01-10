@@ -12,7 +12,7 @@ puts_colorful "Update brew"
   system "brew update && brew upgrade && brew cleanup"
 
 puts_colorful "Update global npm packages"
-  system "sudo npm update npm -g"
+  system "npm install -g npm@latest"
 
 puts_colorful "Update oh my zsh"
   system "env ZSH=$ZSH /bin/sh $ZSH/tools/upgrade.sh"
