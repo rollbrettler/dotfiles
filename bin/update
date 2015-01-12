@@ -2,6 +2,9 @@
 
 require_relative "../lib/terminal.rb"
 
+puts_colorful "Update dotfiles"
+  system "cd $DOTFILES && git pull --rebase --stat origin master"
+
 puts_colorful "Update to the latest RubyGems version"
   system "gem update --system"
 
