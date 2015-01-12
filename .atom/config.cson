@@ -4,6 +4,7 @@
     'showInvisibles': true
     'showIndentGuide': true
     'preferredLineLength': 120
+    'invisibles': {}
   'core':
     'disabledPackages': [
       'metrics'
