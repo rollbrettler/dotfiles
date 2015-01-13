@@ -62,7 +62,7 @@ else
     echo "Linux #ToDo"
 
     sudo apt-get update --assume-yes --quiet
-    sudo apt-get install --assume-yes --quiet zsh
+    sudo apt-get install --assume-yes --quiet zsh pass
 
     clone_dotfile_repository
     make_scripts_executable
