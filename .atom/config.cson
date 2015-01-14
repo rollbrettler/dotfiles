@@ -1,26 +1,26 @@
-'*':
-  'editor':
-    'fontSize': 12
-    'showInvisibles': true
-    'showIndentGuide': true
-    'preferredLineLength': 120
-    'invisibles': {}
-  'core':
-    'disabledPackages': [
-      'metrics'
-      'tabs'
-      'tree-view'
+"*":
+  editor:
+    fontSize: 12
+    showInvisibles: true
+    showIndentGuide: true
+    preferredLineLength: 120
+    invisibles: {}
+  core:
+    disabledPackages: [
+      "metrics"
+      "tabs"
+      "tree-view"
     ]
-  'exception-reporting':
-    'userId': '2f6c1fe2-cfdb-87de-4712-11b4b505fed4'
-  'welcome':
-    'showOnStartup': false
-  'atom-beautify':
-    '_analyticsUserId': '1d4703af-c0bf-4e61-8894-f8865aaabf2b'
-  'linter': {}
-  'tabs':
-    'showIcons': true
-  'tree-view':
-    'hideVcsIgnoredFiles': false
-    'hideIgnoredNames': false
-    'showOnRightSide': false
+  "exception-reporting":
+    userId: "2f6c1fe2-cfdb-87de-4712-11b4b505fed4"
+  welcome:
+    showOnStartup: false
+  "atom-beautify":
+    _analyticsUserId: "1d4703af-c0bf-4e61-8894-f8865aaabf2b"
+  linter: {}
+  tabs:
+    showIcons: true
+  "tree-view":
+    hideVcsIgnoredFiles: false
+    hideIgnoredNames: false
+    showOnRightSide: false
