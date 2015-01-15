@@ -55,7 +55,7 @@
   # push only the current branch
   default = current
 [init]
-  templatedir= ~/.git-hooks
+  templatedir= ~/.dotfiles/.git-hooks
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
