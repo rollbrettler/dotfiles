@@ -1,5 +1,8 @@
-# Define dotfiles directory
+# Define dotfiles path
 export DOTFILES="$HOME/.dotfiles"
+
+# Define passwordstore path
+export PASSWORDSTORE="$HOME/.password-store"
 
 # Make vim the default editor
 export EDITOR="vim"
