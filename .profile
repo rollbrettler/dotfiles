@@ -1,5 +1,5 @@
 # add docker support for every console
-if ! command -v boot2docker >/dev/null; then
+if command -v boot2docker >/dev/null; then
   /usr/local/bin/boot2docker up &> /dev/null
   $(/usr/local/bin/boot2docker shellinit &> /dev/null)
 fi
