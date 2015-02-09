@@ -37,10 +37,16 @@ export PATH="$HOME/.bin:$PATH"
 # recommended by brew doctor
 export PATH="/usr/local/bin:$PATH"
 
-# This loads nvm
+# Load nvm
 export PATH="$PATH:/usr/local/lib/node_modules"
-export NVM_DIR="~/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
+export NVM_DIR=~/.nvm
+# OSX Homebrew installation
+if $(command -v boot2docker > /dev/null); then
+  source $(brew --prefix nvm)/nvm.sh
+else
+  # Default installation
+  [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
+fi
 
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin"

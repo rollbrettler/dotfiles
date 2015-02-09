@@ -1,7 +1,7 @@
 # add docker support for every console
 if command -v boot2docker >/dev/null; then
-  /usr/local/bin/boot2docker up &> /dev/null
-  $(/usr/local/bin/boot2docker shellinit &> /dev/null)
+  boot2docker up &> /dev/null
+  $(boot2docker shellinit)
 fi
 
 # change ruby version to 2.1.5
