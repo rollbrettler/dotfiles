@@ -33,3 +33,4 @@ alias mp3="youtube-dl --prefer-ffmpeg --keep-video --audio-quality 0 --audio-for
 alias update-master="g co master && g pull && g co - && g rebase master"
 
 alias ubuntucli="docker run -i -t --rm ubuntu /bin/bash"
+alias busyboxcli="docker run -it --rm busybox"
