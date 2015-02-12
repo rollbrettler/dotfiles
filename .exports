@@ -60,3 +60,6 @@ if test "$SSH_CONNECTION" != ""
 then
   export PINENTRY_USER_DATA="USE_CURSES=1"
 fi
+
+# add bashmarks
+source "$DOTFILES/submodules/bashmarks/bashmarks.sh"
