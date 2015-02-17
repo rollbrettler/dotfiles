@@ -10,6 +10,7 @@
       "metrics"
       "tabs"
       "tree-view"
+      "editorconfig"
     ]
   "exception-reporting":
     userId: "2f6c1fe2-cfdb-87de-4712-11b4b505fed4"
@@ -24,12 +25,15 @@
     hideVcsIgnoredFiles: false
     hideIgnoredNames: false
     showOnRightSide: false
-".git-rebase.text":
+".ini.source":
+  editor:
+    preferredLineLength: 120
+".git-commit.text":
   editor:
     preferredLineLength: 120
 ".git-config.source":
   editor:
     preferredLineLength: 120
-".git-commit.text":
+".git-rebase.text":
   editor:
     preferredLineLength: 120
