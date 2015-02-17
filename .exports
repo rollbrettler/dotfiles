@@ -61,5 +61,9 @@ then
   export PINENTRY_USER_DATA="USE_CURSES=1"
 fi
 
-# add bashmarks
-source "$DOTFILES/submodules/bashmarks/bashmarks.sh"
+# add bashmarks -- disabled, as "g" is already used for git
+# source "$DOTFILES/submodules/bashmarks/bashmarks.sh"
+
+# Add GOPATH
+export GOPATH="$HOME/.go"
+export PATH="$PATH:$GOPATH/bin"

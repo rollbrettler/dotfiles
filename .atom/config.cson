@@ -25,15 +25,15 @@
     hideVcsIgnoredFiles: false
     hideIgnoredNames: false
     showOnRightSide: false
-".ini.source":
-  editor:
-    preferredLineLength: 120
-".git-commit.text":
+".git-rebase.text":
   editor:
     preferredLineLength: 120
 ".git-config.source":
   editor:
     preferredLineLength: 120
-".git-rebase.text":
+".git-commit.text":
+  editor:
+    preferredLineLength: 120
+".ini.source":
   editor:
     preferredLineLength: 120
