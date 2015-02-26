@@ -31,6 +31,7 @@ alias reload="exec $SHELL -l"
 alias mp3="youtube-dl --prefer-ffmpeg --keep-video --audio-quality 0 --audio-format 'mp3' --extract-audio -o '~/Dropbox/rythm/%(title)s-%(id)s.%(ext)s' "
 
 alias update-master="g co master && g pull && g co - && g rebase master"
+alias update-release="g co release && g pull && g co - && g rebase relase"
 
 alias ubuntucli="docker run -i -t --rm ubuntu /bin/bash"
 alias busyboxcli="docker run -it --rm busybox"
