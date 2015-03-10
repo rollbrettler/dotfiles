@@ -7,3 +7,6 @@ puts_colorful "Cleanup homebrew and homebrew cask"
 
 puts_colorful "Remove 'DS_Store' files"
   system "find ~ -type f -name '*.DS_Store' -ls -delete"
+
+puts_colorful "Cleanup RVM"
+  system "rvm cleanup all"

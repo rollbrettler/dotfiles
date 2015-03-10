@@ -11,6 +11,9 @@ puts_colorful "Update passwordstore"
 puts_colorful "Update to the latest RubyGems version"
   system "gem update --system"
 
+puts_colorful "Update RVM"
+  system "rvm get head && rvm reload"
+
 puts_colorful "Update Atom packages"
   system "yes | apm upgrade"
 
