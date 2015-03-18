@@ -12,3 +12,6 @@ Thumbs.db
 
 # Secret files
 .secrets
+
+# Vim
+.vim/.netrwhist

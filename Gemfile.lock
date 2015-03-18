@@ -11,5 +11,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  colorize (~> 0.7.3)
+  colorize (~> 0.7)
   whenever
