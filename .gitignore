@@ -1,3 +1,6 @@
+!.keep
+!**/*.keep
+
 # Folder view configuration files
 .DS_Store
 Desktop.ini
@@ -15,3 +18,5 @@ Thumbs.db
 
 # Vim
 .vim/.netrwhist
+.vim/autoload
+.vim/bundle
