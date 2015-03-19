@@ -6,7 +6,7 @@ fi
 
 # change ruby version to 2.1.5
 if ! command -v rvm >/dev/null; then
-  rvm use --create 2.1.5 > /dev/null
+  rvm use --create 2.2.0 > /dev/null
 fi
 
 source /usr/local/share/zsh/site-functions/_aws
