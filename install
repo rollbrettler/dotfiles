@@ -10,27 +10,18 @@ make_scripts_executable() {
   for script in "decrypt" "encrypt" "mac" "linux"; do
     chmod +x ~/.dotfiles/bin/"${script}"
   done
+  for lib in "link_submodules" "link_dotfiles"; do
+    chmod +x ~/.dotfiles/lib/"${script}"
+  done
   chmod +x ~/.dotfiles/install
 }
 
 link_dotfiles() {
-  for dotfile in ".aliases" ".exports" ".secrets" ".wgetrc" ".ssh" ".js" ".vim" ".zshrc" ".profile"; do
-    if [[ -L ~/"${dotfile}" && -d ~/"${dotfile}" ]]; then
-      unlink ~/"${dotfile}"
-    else
-      mv ~/"${dotfile}" ~/.dotfiles/bak/"${dotfile}"
-    fi
-    ln -s ~/.dotfiles/"${dotfile}" ~/"${dotfile}"
-  done
+  ~/.dotfiles/lib/link_dotfiles
 }
 
 link_submodule_files() {
-  if [[ -L ~/.dotfiles/.vim/colors/molokai.vim ]]; then
-    unlink ~/.dotfiles/.vim/colors/molokai.vim
-  else
-    mv ~/.dotfiles/.vim/colors/molokai.vim ~/.dotfiles/bak/molokai.vim
-  fi
-  ln -s ~/.dotfiles/submodules/molokai/colors/molokai.vim ~/.dotfiles/.vim/colors/molokai.vim
+  ~/.dotfiles/lib/link_submodules
 }
 
 install_general_terminal_tools() {
