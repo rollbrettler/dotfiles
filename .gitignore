@@ -20,3 +20,4 @@ Thumbs.db
 .vim/.netrwhist
 .vim/autoload
 .vim/bundle
+.vim/swaps
