@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+link_submodule_files() {
+  if [[ -L ~/.dotfiles/.vim/colors/molokai.vim ]]; then
+    unlink ~/.dotfiles/.vim/colors/molokai.vim
+  else
+    mv ~/.dotfiles/.vim/colors/molokai.vim ~/.dotfiles/bak/molokai.vim
+  fi
+
+}
+
+ln -s $DOTFILES/submodules/vim-pathogen/autoload $DOTFILES/.vim/autoload
+ln -s $DOTFILES/submodules/vim-hackernews $DOTFILES/.vim/bundle/vim-hackernews
+ln -s $DOTFILES/submodules/nerdtree $DOTFILES/.vim/bundle/nerdtree
+ln -s $DOTFILES/submodules/molokai/colors/molokai.vim $DOTFILES/.vim/colors/molokai.vim

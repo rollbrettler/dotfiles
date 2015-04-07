@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-ln -s $DOTFILES/submodules/vim-pathogen/autoload $DOTFILES/.vim/autoload
-ln -s $DOTFILES/submodules/vim-hackernews $DOTFILES/.vim/bundle/vim-hackernews
-ln -s $DOTFILES/submodules/nerdtree $DOTFILES/.vim/bundle/nerdtree
