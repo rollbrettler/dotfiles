@@ -10,8 +10,6 @@ if command -v rvm >/dev/null; then
 fi
 
 # initialize rbenv
-if command -v rbenv >/dev/null; then
-  eval "$(rbenv init -)"
-fi
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 source /usr/local/share/zsh/site-functions/_aws
