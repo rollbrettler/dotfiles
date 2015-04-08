@@ -9,6 +9,11 @@
 #
 # }
 
+unlink $DOTFILES/.vim/autoload
+unlink $DOTFILES/.vim/bundle/vim-hackernews
+unlink $DOTFILES/.vim/bundle/nerdtree
+unlink $DOTFILES/.vim/colors/molokai.vim
+
 ln -s $DOTFILES/submodules/vim-pathogen/autoload $DOTFILES/.vim/autoload
 ln -s $DOTFILES/submodules/vim-hackernews $DOTFILES/.vim/bundle/vim-hackernews
 ln -s $DOTFILES/submodules/nerdtree $DOTFILES/.vim/bundle/nerdtree

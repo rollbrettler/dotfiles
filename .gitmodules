@@ -4,3 +4,12 @@
 [submodule "submodules/bashmarks"]
 	path = submodules/bashmarks
 	url = https://github.com/huyng/bashmarks.git
+[submodule "submodules/nerdtree"]
+	path = submodules/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "submodules/vim-hackernews"]
+	path = submodules/vim-hackernews
+	url = https://github.com/ryanss/vim-hackernews.git
+[submodule "submodules/vim-pathogen"]
+	path = submodules/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git

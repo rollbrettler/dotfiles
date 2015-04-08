@@ -4,6 +4,9 @@ OS='uname -s'
 
 clone_dotfile_repository() {
   git clone git@github.com:rollbrettler/dotfiles.git ~/.dotfiles
+  cd ~/.dotfiles
+  git submodule init
+  git submodule update
 }
 
 make_scripts_executable() {

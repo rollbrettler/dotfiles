@@ -19,6 +19,6 @@ Thumbs.db
 # Vim
 .vim/.netrwhist
 .vim/autoload
-.vim/bundle
+.vim/bundle/*
 .vim/swaps
 .vim/colors/molokai.vim
