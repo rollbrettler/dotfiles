@@ -21,3 +21,4 @@ Thumbs.db
 .vim/autoload
 .vim/bundle
 .vim/swaps
+.vim/colors/molokai.vim

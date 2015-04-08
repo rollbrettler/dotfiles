@@ -1,1 +1,0 @@
-/Users/timpetter/.dotfiles/submodules/molokai/colors/molokai.vim
