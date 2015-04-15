@@ -35,3 +35,5 @@ alias update-develop="g co develop && g pull && g co - && g rebase develop"
 
 alias ubuntucli="docker run -i -t --rm ubuntu /bin/bash"
 alias busyboxcli="docker run -it --rm busybox"
+
+alias postgres="postgres -D /usr/local/var/postgres"
