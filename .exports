@@ -70,3 +70,6 @@ fi
 # Add GOPATH
 export GOPATH="$HOME/.go"
 export PATH="$PATH:$GOPATH/bin"
+
+# Add chefdk
+export PATH=/opt/chefdk/bin:$PATH
