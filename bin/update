@@ -18,7 +18,7 @@ puts_colorful "Update Atom packages"
   system "yes | apm upgrade"
 
 puts_colorful "Update brew"
-  system "brew update && brew upgrade && brew cleanup"
+  system "brew update && brew upgrade --all && brew cleanup"
 
 puts_colorful "Update global npm packages"
   system "npm install -g npm@latest"
