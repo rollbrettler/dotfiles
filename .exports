@@ -54,6 +54,7 @@ fi
 
 # To use Homebrew's directories rather than ~/.rbenv add to your profile:
 export RBENV_ROOT=/usr/local/var/rbenv
+# export RBENV_VERSION=2.2.2
 
 # Add pass autocomplete
 # source /usr/local/etc/bash_completion.d/password-store
