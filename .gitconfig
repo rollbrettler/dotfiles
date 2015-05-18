@@ -6,6 +6,7 @@
   ci = commit
   st = status -s
   br = branch
+  latest = diff HEAD~1..HEAD
   hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
   type = cat-file -t
   dump = cat-file -p
