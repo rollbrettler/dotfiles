@@ -4,6 +4,9 @@ export DOTFILES="$HOME/.dotfiles"
 # Define passwordstore path
 export PASSWORDSTORE="$HOME/.password-store"
 
+# Define backup path
+export BACKUP="$HOME/backup"
+
 # Make vim the default editor
 export EDITOR="vim"
 
