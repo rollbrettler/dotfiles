@@ -12,4 +12,6 @@ fi
 # initialize rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-source /usr/local/share/zsh/site-functions/_aws
+if test -f "/usr/local/share/zsh/site-functions/_aws"; then
+  source /usr/local/share/zsh/site-functions/_aws
+fi
