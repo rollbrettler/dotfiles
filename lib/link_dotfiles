@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-for dotfile in ".aliases" ".exports" ".secrets" ".wgetrc" ".ssh" ".js" ".vim" ".zshrc" ".profile" ".atom"; do
+for dotfile in ".aliases" ".gitconfig" ".exports" ".secrets" ".wgetrc" ".ssh" ".js" ".vim" ".zshrc" ".profile" ".atom"; do
   if [[ -L ~/"${dotfile}" && -d ~/"${dotfile}" ]]; then
     unlink ~/"${dotfile}"
   else
