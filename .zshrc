@@ -81,6 +81,7 @@ source $ZSH/oh-my-zsh.sh
 
 fpath=(~/.dotfiles/completion $fpath)
 
+source ~/.personal
 source ~/.aliases
 source ~/.exports
 source ~/.profile
