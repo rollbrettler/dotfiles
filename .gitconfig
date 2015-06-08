@@ -1,6 +1,3 @@
-[user]
-  name = Tim Petter
-  email = tim@timpetter.de
 [alias]
   co = checkout
   ci = commit
