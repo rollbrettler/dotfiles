@@ -1,7 +1,0 @@
-#!/bin/bash
-
-source ~/.dotfiles/lib/secret_files.sh
-
-for secret_file in "${secret_files[@]}"; do
-  gpg --recipient tim@timpetter.de --armor --encrypt $secret_file
-done

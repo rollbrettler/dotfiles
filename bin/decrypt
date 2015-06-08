@@ -1,7 +1,0 @@
-#!/bin/bash
-
-source ~/.dotfiles/lib/secret_files.sh
-
-for secret_file in "${secret_files[@]}"; do
-  gpg --output $secret_file --recipient tim@timpetter.de --armor --decrypt "${secret_file}.asc"
-done
