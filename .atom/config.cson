@@ -4,13 +4,10 @@
     showInvisibles: true
     showIndentGuide: true
     preferredLineLength: 120
-    invisibles:
-      {}
+    invisibles: {}
   core:
     disabledPackages: [
       "metrics"
-      "tabs"
-      "tree-view"
       "editorconfig"
     ]
   "exception-reporting":
@@ -19,15 +16,10 @@
     showOnStartup: false
   "atom-beautify":
     _analyticsUserId: "1d4703af-c0bf-4e61-8894-f8865aaabf2b"
-  linter:
-    {}
+  linter: {}
   tabs:
     showIcons: true
-  "tree-view":
-    hideVcsIgnoredFiles: false
-    hideIgnoredNames: false
-    showOnRightSide: false
-    sortFoldersBeforeFiles: true
+  "tree-view": {}
 ".git-rebase.text":
   editor:
     preferredLineLength: 120
