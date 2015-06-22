@@ -45,3 +45,5 @@ alias berlin-date="TZ='Europe/Berlin' date"
 
 alias unlockusbarmory="ssh -t usbarmory@192.168.2.2 'sudo cryptsetup luksOpen /dev/mmcblk0p2 data && sudo mount /dev/mapper/data /data'"
 alias lockusbarmory="ssh -t usbarmory@192.168.2.2 'sudo umount /data && sudo cryptsetup luksClose data'"
+
+alias be="bundle exec"
