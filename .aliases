@@ -36,8 +36,8 @@ alias mp3="youtube-dl --prefer-ffmpeg --keep-video --audio-quality 0 --audio-for
 alias update-master="g co master && g pull && g co - && g rebase master"
 alias update-develop="g co develop && g pull && g co - && g rebase develop"
 
-alias ubuntucli="docker run -i -t --rm ubuntu /bin/bash"
-alias busyboxcli="docker run -it --rm busybox"
+alias ubuntucli="docker run -i -t --rm -v $(pwd):/data ubuntu /bin/bash"
+alias busyboxcli="docker run -it --rm -v $(pwd):/data busybox"
 
 alias postgres="postgres -D /usr/local/var/postgres"
 
