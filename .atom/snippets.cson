@@ -28,3 +28,17 @@
         $1
       });
       """
+'.source.go':
+  'go boilderplate':
+    'prefix': 'start'
+    'body': """
+      package main
+
+      import (
+      	"fmt"
+      )
+
+      func main() {
+
+      }
+    """
