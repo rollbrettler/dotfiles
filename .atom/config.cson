@@ -16,19 +16,22 @@
     showOnStartup: false
   "atom-beautify":
     _analyticsUserId: "1d4703af-c0bf-4e61-8894-f8865aaabf2b"
-  linter: {}
+  linter:
+    showErrorPanel: false
   tabs:
     showIcons: true
   "tree-view": {}
-".ini.source":
-  editor:
-    preferredLineLength: 120
-".git-commit.text":
+".git-rebase.text":
   editor:
     preferredLineLength: 120
 ".git-config.source":
   editor:
     preferredLineLength: 120
-".git-rebase.text":
+".git-commit.text":
   editor:
     preferredLineLength: 120
+".ini.source":
+  editor:
+    preferredLineLength: 120
+"linter-rubocop":
+  executablePath: "/usr/local/var/rbenv/versions/2.2.0/bin/rubocop"
