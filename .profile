@@ -16,3 +16,6 @@ if test -f "/usr/local/share/zsh/site-functions/_aws"; then
   source /usr/local/share/zsh/site-functions/_aws
 fi
 
+if command -v brew >/dev/null; then
+  . `brew --prefix`/etc/profile.d/z.sh
+fi
