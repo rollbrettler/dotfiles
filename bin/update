@@ -6,7 +6,7 @@ puts_colorful "Update dotfiles"
   system "cd $DOTFILES && git stash && git pull --rebase --stat origin master && git stash pop"
 
 puts_colorful "Update passwordstore"
-  system "cd $PASSWORDSTORE && git pull --rebase --stat origin master"
+  system "cd $PASSWORDSTORE && git pull --rebase --stat origin master && git push"
 
 puts_colorful "Update to the latest RubyGems version"
   system "gem update --system"
