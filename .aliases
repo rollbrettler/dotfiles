@@ -43,7 +43,12 @@ alias postgres="postgres -D /usr/local/var/postgres"
 
 alias berlin-date="TZ='Europe/Berlin' date"
 
-alias unlockusbarmory="ssh -t usbarmory@192.168.2.2 'sudo date -s \"$(date -u)\" && sudo cryptsetup luksOpen /dev/mmcblk0p2 data && sudo mount /dev/mapper/data /data'"
+unlockusbarmory() {
+  LOCALDATE=$(date -u)
+
+  ssh -t usbarmory@192.168.2.2 "sudo date -s '$LOCALDATE' && sudo cryptsetup luksOpen /dev/mmcblk0p2 data && sudo mount /dev/mapper/data /data"
+  return
+}
 alias lockusbarmory="ssh -t usbarmory@192.168.2.2 'sudo umount /data && sudo cryptsetup luksClose data'"
 
 alias be="bundle exec"
