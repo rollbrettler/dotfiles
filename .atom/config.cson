@@ -21,6 +21,7 @@
   tabs:
     showIcons: true
   "tree-view": {}
+  react: {}
 ".git-rebase.text":
   editor:
     preferredLineLength: 120
