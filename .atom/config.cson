@@ -1,10 +1,10 @@
 "*":
   editor:
-    fontSize: 13
     showInvisibles: true
     showIndentGuide: true
     preferredLineLength: 120
     invisibles: {}
+    fontSize: 13
   core:
     disabledPackages: [
       "metrics"
@@ -21,17 +21,16 @@
   tabs:
     showIcons: true
   "tree-view": {}
-  react: {}
-".git-rebase.text":
-  editor:
-    preferredLineLength: 120
-".git-config.source":
+".ini.source":
   editor:
     preferredLineLength: 120
 ".git-commit.text":
   editor:
     preferredLineLength: 120
-".ini.source":
+".git-config.source":
+  editor:
+    preferredLineLength: 120
+".git-rebase.text":
   editor:
     preferredLineLength: 120
 "linter-rubocop":
