@@ -21,6 +21,7 @@
   tabs:
     showIcons: true
   "tree-view": {}
+  Zen: {}
 ".ini.source":
   editor:
     preferredLineLength: 120
