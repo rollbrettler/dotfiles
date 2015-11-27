@@ -42,3 +42,8 @@
       	fmt.Printf("Start")
       }
     """
+  'log':
+    'prefix': 'log'
+    'body': """
+      log.Printf("Log Entry: %v\\n", $1)
+    """

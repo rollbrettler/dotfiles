@@ -52,3 +52,8 @@ unlockusbarmory() {
 alias lockusbarmory="ssh -t usbarmory@192.168.2.2 'sudo umount /data && sudo cryptsetup luksClose data'"
 
 alias be="bundle exec"
+
+docker-machine-start() {
+  docker-machine start $1
+  eval "$(docker-machine env $1)"
+}
