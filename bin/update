@@ -2,26 +2,46 @@
 
 require_relative "../lib/terminal.rb"
 
-puts_colorful "Update dotfiles"
-  system "cd $DOTFILES && git stash && git pull --rebase --stat origin master && git stash pop"
+def dotfiles
+  puts_colorful "Update dotfiles"
+    system "cd $DOTFILES && git stash && git pull --rebase --stat origin master && git stash pop"
+end
 
-puts_colorful "Update passwordstore"
-  system "cd $PASSWORDSTORE && git pull --rebase --stat origin master && git push"
+def passwordstore
+  puts_colorful "Update passwordstore"
+    system "cd $PASSWORDSTORE && git pull --rebase --stat origin master && git push"
+end
 
-puts_colorful "Update to the latest RubyGems version"
-  system "gem update --system"
+def ruby_gems
+  puts_colorful "Update to the latest RubyGems version"
+    system "gem update --system"
+end
 
-# puts_colorful "Update RVM"
-#   system "rvm get head && rvm reload"
+def atom_packages
+  puts_colorful "Update Atom packages"
+    system "apm upgrade -c false"
+end
 
-puts_colorful "Update Atom packages"
-  system "yes | apm upgrade"
+def homebrew
+  puts_colorful "Update brew"
+    system "brew update && brew upgrade --all && brew cleanup"
+end
 
-puts_colorful "Update brew"
-  system "brew update && brew upgrade --all && brew cleanup"
+def npm
+  puts_colorful "Update global npm packages"
+    system "npm install -g npm@latest"
+end
 
-puts_colorful "Update global npm packages"
-  system "npm install -g npm@latest"
+def zsh
+  puts_colorful "Update oh my zsh"
+    system "env ZSH=$ZSH /bin/sh $ZSH/tools/upgrade.sh"
+end
 
-puts_colorful "Update oh my zsh"
-  system "env ZSH=$ZSH /bin/sh $ZSH/tools/upgrade.sh"
+if ARGV[0]
+  send(ARGV[0])
+  exit 0
+end
+
+%w(dotfiles passwordstore ruby_gems atom_packages homebrew npm zsh).each do |task|
+  send(task)
+end
