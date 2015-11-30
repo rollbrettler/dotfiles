@@ -57,3 +57,5 @@ docker-machine-start() {
   docker-machine start $1
   eval "$(docker-machine env $1)"
 }
+
+alias rmv="rsync --remove-source-files --progress"
