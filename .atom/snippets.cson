@@ -28,6 +28,11 @@
         $1
       });
       """
+  'extend':
+    'prefix': 'extend'
+    'body': """
+      Object.assign({}, $1.defaults, options || {})
+      """
 '.source.go':
   'go boilderplate':
     'prefix': 'start'
