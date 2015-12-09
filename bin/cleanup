@@ -2,11 +2,27 @@
 
 require_relative "../lib/terminal.rb"
 
-puts_colorful "Cleanup homebrew and homebrew cask"
-  system "brew cleanup && brew cask cleanup"
+def homebrew
+  puts_colorful "Cleanup homebrew and homebrew cask"
+    system "brew cleanup && brew cask cleanup"
+end
 
-puts_colorful "Remove 'DS_Store' files"
-  system "find ~ -type f -name '*.DS_Store' -ls -delete"
+def mac
+  puts_colorful "Remove 'DS_Store' files"
+    system "find ~ -type f -name '*.DS_Store' -ls -delete"
+end
 
-# puts_colorful "Cleanup RVM"
-#   system "rvm cleanup all"
+def docker
+  puts_colorful "Cleanup docker"
+    system "docker rm $(docker ps -a -q)"
+    system "docker rmi $(docker images -q -f dangling=true)"
+end
+
+if ARGV[0]
+  send(ARGV[0])
+  exit 0
+end
+
+%w(homebrew mac docker).each do |task|
+  send(task)
+end
