@@ -1,5 +1,3 @@
-require "colorize"
-
 def puts_colorful(string)
-  puts string.colorize(:green).bold
+  puts "\033[1;32m#{string}\033[0m"
 end

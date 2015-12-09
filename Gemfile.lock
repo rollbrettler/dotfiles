@@ -2,7 +2,6 @@ GEM
   remote: https://rubygems.org/
   specs:
     chronic (0.10.2)
-    colorize (0.7.3)
     whenever (0.9.4)
       chronic (>= 0.6.3)
 
@@ -11,5 +10,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  colorize (~> 0.7)
   whenever
+
+BUNDLED WITH
+   1.10.6
