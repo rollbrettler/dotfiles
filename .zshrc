@@ -12,7 +12,7 @@ ZSH_THEME="tim"
 # CASE_SENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -46,7 +46,7 @@ ZSH_THEME="tim"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx ruby cp docker bower brew brew-cask heroku nmap coffee atom forklift grunt nvm rails)
+plugins=(git osx ruby cp docker bower brew brew-cask heroku nmap nvm rails)
 
 source $ZSH/oh-my-zsh.sh
 
