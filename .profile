@@ -1,7 +1,7 @@
 # add docker support for every console
-if command -v docker-machine > /dev/null; then
-  docker-machine-start dev
-fi
+#if command -v docker-machine > /dev/null; then
+#  docker-machine-start dev
+#fi
 
 # initialize rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
