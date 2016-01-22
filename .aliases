@@ -53,9 +53,14 @@ alias lockusbarmory="ssh -t usbarmory@192.168.2.2 'sudo umount /data && sudo cry
 
 alias be="bundle exec"
 
+# start specific docker machine and prepare env to access it
 docker-machine-start() {
   docker-machine start $1
   eval "$(docker-machine env $1)"
 }
 
+# Move files with rsync to show the progress
 alias rmv="rsync --remove-source-files --progress"
+
+# load secret env vars from password store
+alias load-secrets="source <(pass dotfiles/secrets)"
