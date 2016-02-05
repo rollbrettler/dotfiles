@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run --cpu-quota 50000 --rm -t -v /Volumes/MOVIES/_sort/Filme:/source -v /Volumes/MOVIES/Filme/Movies:/destination -v /Volumes/MOVIES/tmp:/tmp rollbrettler/compress-videos:0.2.0
+docker run --cpu-quota 50000 --rm -t -v /Volumes/MOVIES/_sort/Filme:/source -v /Volumes/MOVIES/Filme/Movies:/destination -v /Volumes/MOVIES/tmp:/tmp rollbrettler/compress-videos:0.3.0
