@@ -1,10 +1,7 @@
 "*":
-  editor:
-    showInvisibles: true
-    showIndentGuide: true
-    preferredLineLength: 120
-    invisibles: {}
-    fontSize: 13
+  Zen: {}
+  "atom-beautify":
+    analytics: false
   core:
     disabledPackages: [
       "metrics"
@@ -12,34 +9,37 @@
       "linter-rubocop"
       "linter-sass-lint"
     ]
+  editor:
+    fontSize: 13
+    invisibles: {}
+    preferredLineLength: 120
+    showIndentGuide: true
+    showInvisibles: true
   "exception-reporting":
     userId: "2f6c1fe2-cfdb-87de-4712-11b4b505fed4"
-  welcome:
-    showOnStartup: false
-  "atom-beautify":
-    _analyticsUserId: "1d4703af-c0bf-4e61-8894-f8865aaabf2b"
   linter:
     showErrorPanel: false
   tabs:
     showIcons: true
   "tree-view": {}
-  Zen: {}
-".git-rebase.text":
+  welcome:
+    showOnStartup: false
+".git-commit.text":
   editor:
     preferredLineLength: 120
 ".git-config.source":
   editor:
     preferredLineLength: 120
-".git-commit.text":
+".git-rebase.text":
   editor:
     preferredLineLength: 120
-".ini.source":
+".haml.text":
   editor:
     preferredLineLength: 120
 ".hamlc.text":
   editor:
     preferredLineLength: 120
-".haml.text":
+".ini.source":
   editor:
     preferredLineLength: 120
 "linter-rubocop":
