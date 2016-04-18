@@ -70,3 +70,5 @@ alias load-secrets="source <(pass dotfiles/secrets)"
 docker-machine-space() {
   docker-machine ssh $1 "df /dev/sda1 -h"
 }
+
+alias external-ip="dig @208.67.222.222 myip.opendns.com +short"

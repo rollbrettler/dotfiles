@@ -2,6 +2,12 @@
 
 require_relative "../lib/terminal.rb"
 
+TASKS = %w(dotfiles passwordstore ruby_gems atom_packages homebrew npm zsh)
+
+def help
+  puts TASKS.join("\n")
+end
+
 def dotfiles
   puts_colorful "Update dotfiles"
     system "cd $DOTFILES && git stash && git pull --rebase --stat origin master && git stash pop"
@@ -42,6 +48,6 @@ if ARGV[0]
   exit 0
 end
 
-%w(dotfiles passwordstore ruby_gems atom_packages homebrew npm zsh).each do |task|
+TASKS.each do |task|
   send(task)
 end
