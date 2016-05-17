@@ -25,7 +25,7 @@ end
 
 def atom_packages
   puts_colorful "Update Atom packages"
-    system "apm upgrade -c false"
+    system "apm upgrade --confirm false"
 end
 
 def homebrew

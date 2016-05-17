@@ -50,6 +50,8 @@
     xml: {}
     xtemplate: {}
   core:
+    closeEmptyWindows: false
+    destroyEmptyPanes: false
     disabledPackages: [
       "metrics"
       "editorconfig"
@@ -57,11 +59,14 @@
       "linter-sass-lint"
     ]
   editor:
+    backUpBeforeSaving: true
     fontSize: 13
     invisibles: {}
     preferredLineLength: 120
     showIndentGuide: true
     showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "2f6c1fe2-cfdb-87de-4712-11b4b505fed4"
   linter:

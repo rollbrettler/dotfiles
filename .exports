@@ -78,3 +78,7 @@ export PATH="$PATH:$GOPATH/bin"
 
 # Add chefdk
 export PATH=/opt/chefdk/bin:$PATH
+
+# Disable homebrew tracking
+# https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Analytics.md
+export HOMEBREW_NO_ANALYTICS=1
