@@ -72,3 +72,8 @@ docker-machine-space() {
 }
 
 alias external-ip="dig @208.67.222.222 myip.opendns.com +short"
+
+# get the sha256 checksums for the current folder recursivly
+sha256sum-r() {
+  find directory -type f -print0 | xargs -0 sha256sum
+}
