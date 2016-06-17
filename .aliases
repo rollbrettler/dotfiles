@@ -77,3 +77,6 @@ alias external-ip="dig @208.67.222.222 myip.opendns.com +short"
 sha256sum-r() {
   find directory -type f -print0 | xargs -0 sha256sum
 }
+
+alias restore-personal="pass dotfiles/personal > ~/.personal"
+alias save-personal="pass insert dotfiles/personal -m < ~/.personal"
