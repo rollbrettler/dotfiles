@@ -80,3 +80,5 @@ sha256sum-r() {
 
 alias restore-personal="pass dotfiles/personal > ~/.personal"
 alias save-personal="pass insert dotfiles/personal -m < ~/.personal"
+
+alias decrypt-clipboard="pbpaste | gpg --decrypt"
