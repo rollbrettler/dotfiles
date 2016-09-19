@@ -76,6 +76,7 @@
   "go-debug":
     limitCommandsToGo: true
     panelInitialVisible: false
+  "gometalinter-linter": {}
   linter:
     showErrorPanel: false
   "markdown-preview":

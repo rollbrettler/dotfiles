@@ -82,3 +82,5 @@ alias restore-personal="pass dotfiles/personal > ~/.personal"
 alias save-personal="pass insert dotfiles/personal -m < ~/.personal"
 
 alias decrypt-clipboard="pbpaste | gpg --decrypt"
+
+alias branch="git rev-parse --abbrev-ref HEAD"
