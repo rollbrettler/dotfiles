@@ -84,3 +84,5 @@ alias save-personal="pass insert dotfiles/personal -m < ~/.personal"
 alias decrypt-clipboard="pbpaste | gpg --decrypt"
 
 alias branch="git rev-parse --abbrev-ref HEAD"
+
+alias proxy="ssh -A -D 8181 -t berlin-tor -N -L localhost:5900:localhost:5900"

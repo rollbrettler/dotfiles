@@ -62,6 +62,7 @@
       "Zen"
       "autoprefixer"
     ]
+    telemetryConsent: "no"
   editor:
     backUpBeforeSaving: true
     fontSize: 13
