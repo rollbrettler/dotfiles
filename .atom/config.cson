@@ -78,8 +78,7 @@
     limitCommandsToGo: true
     panelInitialVisible: false
   "gometalinter-linter": {}
-  linter:
-    showErrorPanel: false
+  linter: {}
   "markdown-preview":
     breakOnSingleNewline: true
   tabs:

@@ -36,51 +36,6 @@
   'log':
     'prefix': 'log'
     'body': 'console.log( $1 )$0'
-  'component boilderplate':
-    'prefix': 'component'
-    'body': """
-      var Emitter = require( 'events' ).EventEmitter
-      var inherit = require( 'bloodline' )
-
-      /**
-       * $0
-       * @param {HTMLElement} element
-       * @param {Object} options (optional)
-       * @return {$0}
-       */
-      function $0( element, options ) {
-
-        if ( !( this instanceof $0 ) ) {
-          return new $0( element, options )
-        }
-
-        Emitter.call( this )
-        this.options = Object.assign({}, $0.defaults, options || {})
-
-      }
-
-      /**
-       * Default options
-       * @type {Object}
-       */
-      $0.defaults = {
-
-      }
-
-      /**
-       * Link prototype
-       * @type {Object}
-       */
-      $0.prototype = {
-
-        constructor: $0,
-
-      }
-
-      inherit( $0, Emitter )
-      module.exports = $0
-
-    """
 '.source.go':
   'go boilderplate':
     'prefix': 'start'
@@ -99,4 +54,11 @@
     'prefix': 'log'
     'body': """
       log.Printf("Log Entry: %v\\n", $1)
+    """
+
+'.source.rb':
+  'pry':
+    'prefix': 'pry'
+    'body': """
+      require 'pry'; binding.pry
     """
