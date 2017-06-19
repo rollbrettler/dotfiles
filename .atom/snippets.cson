@@ -58,7 +58,7 @@
 
 '.source.rb':
   'pry':
-    'prefix': 'pry'
+    'prefix': 'require-pry'
     'body': """
       require 'pry'; binding.pry
     """

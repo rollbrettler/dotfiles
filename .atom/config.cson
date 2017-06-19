@@ -61,6 +61,7 @@
       "atom-alignment"
       "Zen"
       "autoprefixer"
+      "github"
     ]
     telemetryConsent: "no"
   editor:
@@ -77,8 +78,11 @@
   "go-debug":
     limitCommandsToGo: true
     panelInitialVisible: false
+  "go-plus": {}
   "gometalinter-linter": {}
   linter: {}
+  "linter-ui-default":
+    showPanel: true
   "markdown-preview":
     breakOnSingleNewline: true
   tabs:
