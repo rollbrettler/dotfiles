@@ -1,4 +1,5 @@
 [alias]
+  d = diff
   co = checkout
   ci = commit
   st = status -s

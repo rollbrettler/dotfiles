@@ -86,3 +86,5 @@ alias decrypt-clipboard="pbpaste | gpg --decrypt"
 alias branch="git rev-parse --abbrev-ref HEAD"
 
 alias proxy="autossh -M 8888 -D 8181 -t tokyo-tor -N -L localhost:5900:192.168.0.23:5900"
+
+alias issh="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
