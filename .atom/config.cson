@@ -55,13 +55,18 @@
     disabledPackages: [
       "metrics"
       "editorconfig"
-      "linter-rubocop"
-      "linter-sass-lint"
-      "angularjs-styleguide-snippets"
       "atom-alignment"
       "Zen"
       "autoprefixer"
       "github"
+      "atom-typescript"
+      "busy-signal"
+      "go-debug"
+      "intentions"
+      "linter"
+      "linter-coffeescript"
+      "linter-ui-default"
+      "merge-conflicts"
     ]
     telemetryConsent: "no"
   editor:

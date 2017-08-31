@@ -85,3 +85,5 @@ source ~/.personal
 source ~/.aliases
 source ~/.exports
 source ~/.profile
+export PATH="/usr/local/opt/v8@3.15/bin:$PATH"
+export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
